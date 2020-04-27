@@ -1,0 +1,58 @@
+.mainSection{
+ 
+    height :90vh;
+    background-image: url(/images/backgound.jpg);
+    .displayColumn();
+     padding-top: 15%;
+
+    h1{
+
+        font-family: 'Kaushan Script', cursive;
+        color:white;
+        font-size: 8rem;
+        padding-bottom:5%;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+
+    }
+    input{
+        width:40%;
+        height: 4vh;
+        margin-bottom: 1%;
+        border: 2px solid green;
+    }
+
+    .btn{
+
+        width:10%;
+        height: 4vh;
+        border-radius: 10px;
+        border:2px solid black;
+        color:green;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        
+    }
+}
+
+//animation
+@keyframes moveInLeft{
+ 
+    0%{
+      opacity:0;
+      transform: translateX(-100px);
+       
+ 
+    }
+    
+    80%{
+       transform: translateX(10px);
+   
+    }
+ 
+    100%{
+     opacity:1;
+     transform: translate(0);
+    }
+ }
