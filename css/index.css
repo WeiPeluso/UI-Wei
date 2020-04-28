@@ -87,32 +87,24 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
-body {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 60px;
-  margin-right: 50px;
-  background-color: lightgray;
-}
 html {
   font-size: 62.5%;
 }
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3%;
+  width: 30%;
+  position: absolute;
+  margin-left: 65%;
 }
 .header .links {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
 }
 .header .links a {
   display: block;
   text-decoration: none;
-  font-size: 4rem;
-  color: green;
+  font-size: 2.5rem;
+  color: white;
   letter-spacing: 0.5rem;
   font-family: 'Kaushan Script', cursive;
 }
@@ -120,47 +112,132 @@ html {
   color: black;
 }
 .mainSection {
-  height: 90vh;
-  background-image: url(/images/backgound.jpg);
+  height: 120vh;
+  background-color: #3b7a57;
+}
+.mainSection .middleSection {
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15%;
+  padding-top: 8%;
 }
-.mainSection h1 {
+.mainSection .middleSection .mainH1 {
+  display: block;
   font-family: 'Kaushan Script', cursive;
   color: white;
-  font-size: 8rem;
-  padding-bottom: 5%;
-  animation-name: moveInLeft;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  padding-bottom: 2%;
 }
-.mainSection input {
-  width: 40%;
-  height: 4vh;
-  margin-bottom: 1%;
-  border: 2px solid green;
-}
-.mainSection .btn {
-  width: 10%;
-  height: 4vh;
-  border-radius: 10px;
-  border: 2px solid black;
-  color: green;
+.mainSection .middleSection .subH1 {
+  display: block;
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  letter-spacing: 0.5rem;
   font-size: 2rem;
+  padding-left: 10%;
+  padding-bottom: 5%;
+}
+.mainSection .middleSection input {
+  width: 40%;
+  padding-bottom: 0.75%;
+  padding-top: 0.75%;
+  border-radius: 10px;
+  font-size: 2rem;
+  outline: none;
+}
+.mainSection .middleSection .btn {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border-radius: 10px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3%;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  width: 10%;
+  border: 2px solid black;
+  color: #3b7a57;
+}
+.mainSection .middleSection img {
+  width: 40%;
+  height: 80vh;
+}
+.secondSection {
+  margin-top: 15%;
+  margin-bottom: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+.secondSection .secondSectionColumn {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+.secondSection .secondSectionColumn img {
+  width: 20%;
+  margin-bottom: 4%;
+}
+.secondSection .secondSectionColumn #img1 {
+  width: 20%;
+}
+.secondSection .secondSectionColumn h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding-bottom: 4%;
+}
+.secondSection .secondSectionColumn p {
+  font-size: 2rem;
+  text-align: center;
+  color: gray;
+}
+.singUp {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 8%;
+}
+.singUp p {
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding-bottom: 2%;
+  font-family: 'Kaushan Script', cursive;
+  color: darkgray;
   letter-spacing: 0.5rem;
 }
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  80% {
-    transform: translateX(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+.singUp .btn {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border-radius: 10px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3%;
+  outline: none;
+  text-transform: uppercase;
+  width: 15%;
+  background-color: #3b7a57;
+  color: white;
+  font-size: 3rem;
+}
+.footer {
+  font-size: 2rem;
+  width: 22%;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 70%;
+  margin-bottom: 2%;
+  justify-content: space-between;
+  align-items: right;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #3b7a57;
 }

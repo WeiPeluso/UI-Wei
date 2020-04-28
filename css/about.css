@@ -87,60 +87,75 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
-body {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 60px;
-  margin-right: 50px;
-  background-color: lightgray;
-}
 html {
   font-size: 62.5%;
 }
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3%;
+  width: 30%;
+  position: absolute;
+  margin-left: 65%;
+  padding-top: 2%;
 }
 .header .links {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
 }
 .header .links a {
   display: block;
   text-decoration: none;
-  font-size: 4rem;
-  color: green;
+  font-size: 2.5rem;
+  color: white;
   letter-spacing: 0.5rem;
   font-family: 'Kaushan Script', cursive;
 }
 .links a:hover {
   color: black;
 }
+.footer {
+  font-size: 2rem;
+  width: 22%;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 70%;
+  margin-bottom: 2%;
+  justify-content: space-between;
+  align-items: right;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #3b7a57;
+}
 .mainSection {
+  background-color: #3b7a57;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .mainSection .about {
+  margin-top: 10%;
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 3%;
+  padding-bottom: 8%;
 }
 .mainSection .about h2 {
   font-size: 3rem;
   font-family: 'Kaushan Script', cursive;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
 .mainSection .about p {
   font-size: 2rem;
   line-height: 4rem;
   width: 80%;
   text-align: center;
+  color: white;
+  letter-spacing: 0.2rem;
 }
 .team {
   width: 100%;
@@ -149,9 +164,12 @@ html {
   align-items: center;
 }
 .team h2 {
+  text-transform: uppercase;
   font-size: 3rem;
   font-family: 'Kaushan Script', cursive;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
+  word-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
 .team .memberInfo {
   display: flex;
@@ -172,5 +190,9 @@ html {
 }
 .team .memberInfo p {
   font-size: 2rem;
-  color: green;
+  color: white;
+}
+.footer {
+  margin-top: 1%;
+  margin-bottom: 1%;
 }

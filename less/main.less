@@ -1,58 +1,132 @@
 .mainSection{
  
-    height :90vh;
-    background-image: url(/images/backgound.jpg);
-    .displayColumn();
-     padding-top: 15%;
+    height :120vh;
+    background-color:@mainGreen;
 
-    h1{
+    .middleSection{
+       // border: 2px solid blue;
+        height:120vh;
+        .displayColumn();
+        padding-top: 8%;
 
+
+    .mainH1{
+        display:block;
         font-family: 'Kaushan Script', cursive;
         color:white;
-        font-size: 8rem;
-        padding-bottom:5%;
-        animation-name: moveInLeft;
-        animation-duration: 3s;
-        animation-timing-function: ease-out;
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        padding-bottom: 2%;
 
     }
+
+
+    .subH1{
+        display:block;
+        font-family: 'Kaushan Script', cursive;
+        color:white;
+        letter-spacing: 0.5rem;
+        font-size: 2rem;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
     input{
         width:40%;
-        height: 4vh;
-        margin-bottom: 1%;
-        border: 2px solid green;
+        padding-bottom:0.75%;
+        padding-top:0.75%;
+        border-radius: 10px;
+        font-size: 2rem;
+        outline:none;
     }
 
     .btn{
 
+        .button();
+        font-size: 2.5rem;
         width:10%;
-        height: 4vh;
-        border-radius: 10px;
         border:2px solid black;
-        color:green;
-        font-size: 2rem;
-        letter-spacing: 0.5rem;
+        color:@mainGreen;
         
     }
+
+
+    img{
+
+        width:40%;
+        height:80vh;
+
+    }//end of image
+}//end of middle section
 }
 
-//animation
-@keyframes moveInLeft{
+
+.secondSection{
+    margin-top:15%;
+    margin-bottom:2%;
+  //  border: 2px solid red;
+    width:100%;
+    .displayRow();
+    justify-content: space-around;
+
+    .secondSectionColumn{
+       // border: 2px solid blue;
+        height:20vh;
+        .displayColumn();
+        justify-content: space-between;
+        width:25%;
  
-    0%{
-      opacity:0;
-      transform: translateX(-100px);
-       
- 
+    img{
+       // border:2px solid red;
+        width:20%;
+        margin-bottom:4%;
     }
+
+    #img1{
+       // border:2px solid red;
+        width:20%;
+    }
+
+    h2{
+         font-size: 3rem;
+         text-transform: capitalize;
+         padding-bottom:4%;
     
-    80%{
-       transform: translateX(10px);
+    }
+
+    p{
+        font-size: 2rem;
+        text-align: center;
+        color:gray;
+        
+     }
+    }// end of secondSectionColumn
+}//end of secondSection
+
+
+.singUp{
+    
+    //border: 2px solid blue;
+    height:20vh;
+    .displayColumn();
+    width:100%;
+    margin-top:8%;
+    p{
+        font-size: 3rem;
+        text-transform: capitalize;
+        padding-bottom:2%;
+        font-family: 'Kaushan Script', cursive;
+        color:darkgray;
+        letter-spacing: 0.5rem;
    
-    }
- 
-    100%{
-     opacity:1;
-     transform: translate(0);
-    }
- }
+   }
+   .btn{
+   .button();
+    width:15%;
+    background-color:@mainGreen;
+    color:white;
+    font-size: 3rem;
+    
+    
+}
+}
