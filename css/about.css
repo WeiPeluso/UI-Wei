@@ -96,10 +96,23 @@ html {
   margin-left: 65%;
   padding-top: 2%;
 }
+@media ( max-width: 700px ) {
+  .header {
+    width: 100%;
+    margin-left: auto;
+    padding-top: 4%;
+  }
+}
 .header .links {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media ( max-width: 700px ) {
+  .header .links {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .header .links a {
   display: block;
@@ -108,6 +121,16 @@ html {
   color: white;
   letter-spacing: 0.5rem;
   font-family: 'Kaushan Script', cursive;
+}
+@media ( max-width: 900px ) {
+  .header .links a {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .header .links a {
+    font-size: 2rem;
+  }
 }
 .links a:hover {
   color: black;
@@ -122,10 +145,27 @@ html {
   justify-content: space-between;
   align-items: right;
 }
+@media ( max-width: 700px ) {
+  .footer {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 2%;
+  }
+}
 .footer a {
   text-decoration: none;
   font-size: 2rem;
   color: #3b7a57;
+}
+@media ( max-width: 900px ) {
+  .footer a {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .footer a {
+    font-size: 1.2rem;
+  }
 }
 .mainSection {
   background-color: #3b7a57;
@@ -141,6 +181,12 @@ html {
   align-items: center;
   padding-bottom: 8%;
 }
+@media ( max-width: 700px ) {
+  .mainSection .about {
+    width: 100%;
+    margin-top: 20%;
+  }
+}
 .mainSection .about h2 {
   font-size: 3rem;
   font-family: 'Kaushan Script', cursive;
@@ -149,6 +195,12 @@ html {
   word-spacing: 1rem;
   letter-spacing: 0.5rem;
 }
+@media ( max-width: 700px ) {
+  .mainSection .about h2 {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+}
 .mainSection .about p {
   font-size: 2rem;
   line-height: 4rem;
@@ -156,6 +208,13 @@ html {
   text-align: center;
   color: white;
   letter-spacing: 0.2rem;
+}
+@media ( max-width: 700px ) {
+  .mainSection .about p {
+    width: 90%;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
 }
 .team {
   width: 100%;
@@ -171,17 +230,35 @@ html {
   word-spacing: 1rem;
   letter-spacing: 0.5rem;
 }
+@media ( max-width: 700px ) {
+  .team h2 {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+}
 .team .memberInfo {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   justify-content: center;
 }
+@media ( max-width: 700px ) {
+  .team .memberInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .team .memberInfo .member {
   width: 30%;
   text-align: center;
   padding-bottom: 2%;
   padding-left: 2%;
+}
+@media ( max-width: 700px ) {
+  .team .memberInfo .member {
+    width: 70%;
+  }
 }
 .team .memberInfo .member .memberimg {
   border-radius: 10%;
@@ -192,7 +269,18 @@ html {
   font-size: 2rem;
   color: white;
 }
+@media ( max-width: 700px ) {
+  .team .memberInfo p {
+    font-size: 1.5rem;
+    padding-bottom: 10%;
+  }
+}
 .footer {
   margin-top: 1%;
   margin-bottom: 1%;
+}
+@media ( max-width: 700px ) {
+  .footer {
+    width: 40%;
+  }
 }

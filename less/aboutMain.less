@@ -8,6 +8,10 @@
         .displayColumn();
          padding-bottom: 8%;
         
+         @media @phone{
+             width:100%;
+            margin-top: 20%;
+         }
 
         h2{
             
@@ -17,7 +21,13 @@
             text-transform: uppercase;
             word-spacing: 1rem;
             letter-spacing: .5rem;
-            
+
+            @media @phone{
+              
+                font-size: 2rem;
+                letter-spacing: .3rem;
+               
+            }
     }//end of h2
     
     p{
@@ -28,6 +38,13 @@
         text-align: center;
         color:white;
         letter-spacing: .2rem;
+
+        @media @phone{
+            width:90%;
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+           
+        }
     }//end of P
 
     }//end of about
@@ -46,6 +63,12 @@
         padding-bottom: 3%;
         word-spacing: 1rem;
         letter-spacing: .5rem;
+        @media @phone{
+              
+            font-size: 2rem;
+            letter-spacing: .3rem;
+           
+        }
 }//end of h2
 
 .memberInfo{
@@ -55,23 +78,40 @@
     justify-content: center;
 
   
+    @media @phone{
+              
+        .displayColumn();
+       
+    }
     .member{
        // border: 2px solid red;
         width: 30%;
         text-align: center;
         padding-bottom: 2%;
         padding-left:2%;
+
+        @media @phone{
+              
+            width: 70%;;
+           
+        }
         .memberimg{
             //border: 2px solid blue;;
-            border-radius: 10%;;
+            border-radius: 10%;
             width:100%;
-            padding-bottom: 3%;;
+            padding-bottom: 3%;
         }
     }
     p{
       //  border: 2px solid green;;
         font-size: 2rem;
         color:white;
+        @media @phone{
+              
+            font-size: 1.5rem;
+            padding-bottom: 10%;
+           
+        }
     }
 }// end of memberinfo
 
@@ -80,4 +120,13 @@
 .footer{
   margin-top:1%;
   margin-bottom:1%;
+
+
+  @media @phone{
+              
+    width: 40%;
+   
+}
+
+
 }
