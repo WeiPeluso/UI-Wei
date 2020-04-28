@@ -1,5 +1,5 @@
 .footer{
- //   border: 2px solid red;
+//   border: 2px solid red; 
     font-size: 2rem;
     width:22%;
     .displayRow();
@@ -8,9 +8,27 @@
     margin-bottom:2%;
     justify-content:space-between;
     align-items: right;
+
+    @media @phone{
+    //  border: 2px solid red; 
+        width:50%;
+        margin-left:50%;
+        margin-top:2%;
+    }
     a{
     text-decoration: none;
     font-size: 2rem;
     color:@mainGreen;
+
+    @media @tablet{
+          
+        font-size: 1.5rem;
+        
+    }
+
+    @media @phone{
+        font-size: 1.2rem;
+        
+    }
     }
 }

@@ -94,11 +94,25 @@ html {
   width: 30%;
   position: absolute;
   margin-left: 65%;
+  padding-top: 2%;
+}
+@media ( max-width: 700px ) {
+  .header {
+    width: 100%;
+    margin-left: auto;
+    padding-top: 4%;
+  }
 }
 .header .links {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media ( max-width: 700px ) {
+  .header .links {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .header .links a {
   display: block;
@@ -108,6 +122,16 @@ html {
   letter-spacing: 0.5rem;
   font-family: 'Kaushan Script', cursive;
 }
+@media ( max-width: 900px ) {
+  .header .links a {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .header .links a {
+    font-size: 2rem;
+  }
+}
 .links a:hover {
   color: black;
 }
@@ -115,12 +139,23 @@ html {
   height: 120vh;
   background-color: #3b7a57;
 }
+@media ( max-width: 700px ) {
+  .mainSection {
+    height: 80vh;
+  }
+}
 .mainSection .middleSection {
   height: 120vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 8%;
+}
+@media ( max-width: 700px ) {
+  .mainSection .middleSection {
+    height: 80vh;
+  }
 }
 .mainSection .middleSection .mainH1 {
   display: block;
@@ -129,6 +164,22 @@ html {
   font-size: 5rem;
   letter-spacing: 1rem;
   padding-bottom: 2%;
+}
+@media ( max-width: 900px ) {
+  .mainSection .middleSection .mainH1 {
+    padding-top: 2%;
+    margin-left: 10%;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .mainSection .middleSection .mainH1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    padding-top: 8%;
+    margin-left: 5%;
+  }
 }
 .mainSection .middleSection .subH1 {
   display: block;
@@ -139,6 +190,18 @@ html {
   padding-left: 10%;
   padding-bottom: 5%;
 }
+@media ( max-width: 900px ) {
+  .mainSection .middleSection .subH1 {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .mainSection .middleSection .subH1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding-left: 0%;
+  }
+}
 .mainSection .middleSection input {
   width: 40%;
   padding-bottom: 0.75%;
@@ -147,55 +210,117 @@ html {
   font-size: 2rem;
   outline: none;
 }
+@media ( max-width: 900px ) {
+  .mainSection .middleSection input {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .mainSection .middleSection input {
+    width: 60%;
+  }
+}
 .mainSection .middleSection .btn {
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  padding: 0.5%;
   border-radius: 10px;
   letter-spacing: 0.2rem;
   margin-bottom: 3%;
   outline: none;
   text-transform: uppercase;
   font-size: 2.5rem;
-  width: 10%;
+  width: 15%;
   border: 2px solid black;
   color: #3b7a57;
+}
+@media ( max-width: 900px ) {
+  .mainSection .middleSection .btn {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .mainSection .middleSection .btn {
+    width: 40%;
+    font-size: 1.5rem;
+  }
 }
 .mainSection .middleSection img {
   width: 40%;
   height: 80vh;
 }
+@media ( max-width: 900px ) {
+  .mainSection .middleSection img {
+    width: 50%;
+  }
+}
+@media ( max-width: 700px ) {
+  .mainSection .middleSection img {
+    width: 60%;
+    height: 50vh;
+  }
+}
 .secondSection {
-  margin-top: 15%;
+  margin-top: 18%;
   margin-bottom: 2%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   justify-content: space-around;
 }
+@media ( max-width: 700px ) {
+  .secondSection {
+    margin-top: 20%;
+    margin-bottom: 2%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 .secondSection .secondSectionColumn {
-  height: 20vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 25%;
 }
+@media ( max-width: 700px ) {
+  .secondSection .secondSectionColumn {
+    width: 80%;
+    height: 30vh;
+    padding-bottom: 10%;
+  }
+}
 .secondSection .secondSectionColumn img {
   width: 20%;
   margin-bottom: 4%;
 }
-.secondSection .secondSectionColumn #img1 {
-  width: 20%;
+@media ( max-width: 700px ) {
+  .secondSection .secondSectionColumn img {
+    width: 13%;
+    margin-bottom: 2%;
+  }
 }
 .secondSection .secondSectionColumn h2 {
   font-size: 3rem;
   text-transform: capitalize;
   padding-bottom: 4%;
 }
+@media ( max-width: 700px ) {
+  .secondSection .secondSectionColumn h2 {
+    font-size: 2rem;
+  }
+}
 .secondSection .secondSectionColumn p {
   font-size: 2rem;
   text-align: center;
   color: gray;
+}
+@media ( max-width: 700px ) {
+  .secondSection .secondSectionColumn p {
+    font-size: 1.5rem;
+  }
 }
 .singUp {
   height: 20vh;
@@ -205,6 +330,11 @@ html {
   width: 100%;
   margin-top: 8%;
 }
+@media ( max-width: 700px ) {
+  .singUp {
+    height: 12vh;
+  }
+}
 .singUp p {
   font-size: 3rem;
   text-transform: capitalize;
@@ -213,18 +343,39 @@ html {
   color: darkgray;
   letter-spacing: 0.5rem;
 }
+@media ( max-width: 900px ) {
+  .singUp p {
+    font-size: 2rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .singUp p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}
 .singUp .btn {
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  padding: 0.5%;
   border-radius: 10px;
   letter-spacing: 0.2rem;
   margin-bottom: 3%;
   outline: none;
   text-transform: uppercase;
-  width: 15%;
+  width: 20%;
   background-color: #3b7a57;
   color: white;
   font-size: 3rem;
+}
+@media ( max-width: 900px ) {
+  .singUp .btn {
+    font-size: 2rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .singUp .btn {
+    width: 30%;
+    font-size: 1.5rem;
+  }
 }
 .footer {
   font-size: 2rem;
@@ -236,8 +387,25 @@ html {
   justify-content: space-between;
   align-items: right;
 }
+@media ( max-width: 700px ) {
+  .footer {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 2%;
+  }
+}
 .footer a {
   text-decoration: none;
   font-size: 2rem;
   color: #3b7a57;
+}
+@media ( max-width: 900px ) {
+  .footer a {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .footer a {
+    font-size: 1.2rem;
+  }
 }

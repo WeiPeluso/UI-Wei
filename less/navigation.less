@@ -3,16 +3,28 @@
 
     //border: 2px solid red;
     width:30%;
-     position: absolute;
+    position: absolute;
     margin-left:65%;
     padding-top:2%;
 
+    @media @phone{
+        //border: 2px solid blue;
+       width:100%;
+       margin-left:auto;
+       padding-top:4%;
+
+    }
 
     .links{
         //border: 2px solid blue;
         .displayRow();
         width:100%;
         
+        @media @phone{
+            //border: 2px solid red;
+           width:100%;
+           justify-content: space-around;
+        }
        
 
         a{
@@ -23,7 +35,14 @@
             color:white;
             letter-spacing: 0.5rem;
             font-family: 'Kaushan Script', cursive;
+
+            @media @tablet{
+                font-size:1.5rem;
+            }
            
+            @media @phone{
+                font-size:2rem;
+            }
             }//end of a
     }
 
