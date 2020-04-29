@@ -87,35 +87,258 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
-body {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 60px;
-  margin-right: 50px;
-  background-color: lightgray;
-}
 html {
   font-size: 62.5%;
 }
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3%;
+  width: 30%;
+  position: absolute;
+  margin-left: 65%;
+  padding-top: 2%;
+}
+@media ( max-width: 700px ) {
+  .header {
+    width: 100%;
+    margin-left: auto;
+    padding-top: 4%;
+  }
 }
 .header .links {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
+}
+@media ( max-width: 700px ) {
+  .header .links {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .header .links a {
   display: block;
   text-decoration: none;
-  font-size: 4rem;
-  color: green;
+  font-size: 2.5rem;
+  color: white;
   letter-spacing: 0.5rem;
   font-family: 'Kaushan Script', cursive;
 }
+@media ( max-width: 900px ) {
+  .header .links a {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .header .links a {
+    font-size: 2rem;
+  }
+}
 .links a:hover {
   color: black;
+}
+.footer {
+  font-size: 2rem;
+  width: 22%;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 70%;
+  margin-bottom: 2%;
+  justify-content: space-between;
+  align-items: right;
+}
+@media ( max-width: 700px ) {
+  .footer {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 2%;
+  }
+}
+.footer a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #3b7a57;
+}
+@media ( max-width: 900px ) {
+  .footer a {
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .footer a {
+    font-size: 1.2rem;
+  }
+}
+.loginBody {
+  background-color: #3b7a57;
+  height: 110vh;
+  display: inline-block;
+  width: 100%;
+}
+@media ( max-width: 500px ) {
+  .loginBody {
+    height: 100vh;
+  }
+}
+.loginFrame {
+  position: relative;
+  border: 2px solid #3b7a57;
+  border-radius: 10px;
+  width: 40%;
+  height: 80vh;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1250px) {
+  .loginFrame {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 850px) {
+  .loginFrame {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15%;
+  }
+}
+@media (max-width: 620px) {
+  .loginFrame {
+    width: 100%;
+    margin-left: auto;
+    margin-top: 15%;
+  }
+}
+.loginFrame .firstSection {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 5%;
+}
+.loginFrame .firstSection p {
+  font-size: 3.5rem;
+  color: #3b7a57;
+  font-family: 'Kaushan Script', cursive;
+}
+@media ( max-width: 500px ) {
+  .loginFrame .firstSection p {
+    font-size: 2.5rem;
+  }
+}
+.loginFrame .firstSection input {
+  width: 60%;
+  border-radius: 8px;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  line-height: 3rem;
+}
+@media ( max-width: 500px ) {
+  .loginFrame .firstSection input {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+.loginFrame .firstSection #login {
+  color: white;
+  background-color: #3b7a57;
+}
+.loginFrame .firstSection .RegisterandForgetP {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+@media ( max-width: 500px ) {
+  .loginFrame .firstSection .RegisterandForgetP {
+    width: 80%;
+  }
+}
+.loginFrame .firstSection .RegisterandForgetP a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+@media ( max-width: 500px ) {
+  .loginFrame .firstSection .RegisterandForgetP a {
+    font-size: 1.2rem;
+  }
+}
+.loginFrame .firstSection .RegisterandForgetP #register {
+  color: blue;
+}
+.loginFrame .socialMedia {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+@media ( max-width: 500px ) {
+  .loginFrame .socialMedia {
+    margin-top: 2%;
+  }
+}
+.loginFrame p {
+  font-size: 2rem;
+  color: dimgrey;
+  letter-spacing: 0.1rem;
+}
+@media ( max-width: 500px ) {
+  .loginFrame p {
+    font-size: 1.8rem;
+  }
+}
+.loginFrame .btn {
+  width: 60%;
+  border-radius: 8px;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  line-height: 2rem;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+@media ( max-width: 500px ) {
+  .loginFrame .btn {
+    font-size: 1.5rem;
+    width: 70%;
+  }
+}
+.loginFrame #facebook {
+  background-color: #3b5998;
+}
+.loginFrame #twitter {
+  background-color: #55ACEE;
+}
+.loginFrame #google {
+  background-color: #dd4b39;
+}
+.loginFrame i {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+@media ( max-width: 700px ) {
+  .footer {
+    width: 40%;
+  }
+}
+@media ( max-width: 500px ) {
+  .footer {
+    width: 50%;
+    margin-left: 40%;
+  }
 }

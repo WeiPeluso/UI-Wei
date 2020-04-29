@@ -1,0 +1,190 @@
+.loginBody{
+    background-color: @mainGreen;
+    height: 110vh;
+    display:inline-block;
+    width:100%;
+    @media @smallPhone {
+        height: 100vh;
+    }
+}
+    
+
+.loginFrame{
+position: relative;
+border:2px solid @mainGreen;
+border-radius: 10px;;
+width: 40%;
+height: 80vh;
+margin-left:30%;
+margin-right:30%;
+margin-top:10%;
+background-color: white;
+align-items: center;
+.displayColumn();
+//justify-content: space-around;
+align-items: center;
+
+@media(max-width: 1250px) {
+    width: 60%;
+    margin-left:20%;
+}
+
+@media(max-width: 850px) {
+    width: 80%;
+    margin-left:10%;
+    margin-top:15%;
+}
+@media(max-width: 620px) {
+    width: 100%;
+    margin-left:auto;
+    margin-top:15%;
+}
+
+
+
+.firstSection{
+
+  
+    height: 40vh;
+    .displayColumn();
+    justify-content: space-around;
+    width:80%;
+    margin-top: 5%;
+    p{
+        font-size: 3.5rem;
+        color:@mainGreen;
+        font-family: 'Kaushan Script', cursive;
+
+        @media @smallPhone{
+            font-size: 2.5rem;
+        }
+    }
+
+    input{
+        
+        width: 60%;
+        border-radius: 8px;
+        opacity:0.85;
+        display:inline-block;
+        font-size:2rem;
+        text-decoration: none;
+        line-height: 3rem;
+
+        
+   @media @smallPhone{
+    line-height: 2rem;
+    font-size:1.5rem;
+
+}
+    }
+    #login{
+        color:white;
+        background-color: @mainGreen;
+    }
+   
+    .RegisterandForgetP{
+     //   border:2px solid blue;
+        width:60%;
+        @media @smallPhone{
+            width:80%;
+        }
+        .displayRow();
+        justify-content: space-around;
+     
+         a{
+            text-decoration: none;
+            font-size:1.5rem;
+            @media @smallPhone{
+                font-size:1.2rem;
+            }
+         }
+
+         #register{
+             color:blue;
+         }
+    }
+
+    
+}//end of first section
+
+    
+.socialMedia{
+
+    //border: 2px solid blue;
+    height: 30vh;
+    .displayColumn();
+    justify-content: space-around;
+    width:80%;
+   // margin-top: 5%;
+
+   @media @smallPhone{
+       margin-top: 2%;
+
+}
+}
+p{
+    font-size:2rem;
+    color:dimgrey;
+    letter-spacing:.1rem;
+    @media @smallPhone{
+        font-size:1.8rem;
+ 
+ }
+}
+
+.btn{
+        //border: 2px solid blue;
+        width: 60%;
+        border-radius: 8px;
+        opacity:0.85;
+        display:inline-block;
+        font-size:2rem;
+        text-decoration: none;
+        line-height: 2rem;
+        color:white;
+        padding:12px;
+        text-align: center;
+        
+        @media @smallPhone{
+            font-size:1.5rem;
+            width: 70%;
+     
+     }
+}
+
+#facebook{
+    background-color:#3b5998 ;
+}
+
+#twitter{
+    background-color:#55ACEE ;
+}
+#google{
+    background-color:#dd4b39 ;
+}
+i {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+
+.footer{
+    margin-top:1%;
+    margin-bottom:1%;
+  
+  
+    @media @phone{
+                
+      width: 40%;
+     
+  }
+    
+  @media @smallPhone{
+                
+    width: 50%;
+    margin-left:40%;
+
+   
+}
+}
