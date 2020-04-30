@@ -4,28 +4,41 @@
     background-color:@mainGreen;
     //border: 2px solid blue;
 
-    @media @phone{
-        height:80vh;
-    }
-
     @media @tablet{
         height:100vh;
     }
+
+    @media @phone{
+        height:80vh;
+    }
+    @media @smallPhone{
+        height:60vh;
+        
+    }
+
+  
     .middleSection{
-      //border: 2px solid blue;
+      border: 2px solid blue;
         height:120vh;
         width:100%;
         .displayColumn();
         align-items: center;
         padding-top: 8%;
+
+        @media @tablet{
+            padding-top: 10%;
+            height:100vh;
+        }
  
         @media @phone{
             height:80vh;
         }
-        @media @tablet{
-            padding-top: 15%;
-            height:100vh;
+
+        @media @smallPhone{
+            height:60vh;
+            
         }
+     
 
     .mainH1{
         display:block;
@@ -49,6 +62,7 @@
             padding-top: 4%;
             margin-left:5%;
         }
+   
 
     }
 
@@ -116,6 +130,14 @@
             font-size: 1.5rem;
             
         }
+
+        @media @smallPhone{
+            padding: 2.5%;
+            padding-bottom: 5%;
+            font-size: 1.5rem;
+            
+        }
+     
     }
 
 
@@ -133,7 +155,7 @@
         }
 
         @media @phone{
-            width:60%;
+            width:45%;
             
         }
 
@@ -143,13 +165,20 @@
 
 
 .secondSection{
-    margin-top:18%;
+    margin-top:35%;
     margin-bottom:2%;
   //  border: 2px solid red;
     width:100%;
 
     .displayRow();
     justify-content: space-around;
+
+    @media @laptop{
+        //border: 2px solid red;
+        margin-top:25%;
+ 
+     
+ }
 
     @media @tablet{
         //border: 2px solid red;
@@ -170,10 +199,17 @@
         
     }
 
+    
+    @media @smallPhone{
+        //border: 2px solid red;
+      margin-top:35%;
+ 
+     
+      }
 
 
     .secondSectionColumn{
-       // border: 2px solid blue;
+       border: 2px solid blue;
         height:25vh;
         .displayColumn();
         justify-content: space-between;
@@ -181,9 +217,7 @@
         @media @phone{
             width:80%;
             height:30vh;
-            padding-bottom: 10%;;
-     
-         
+            padding-bottom: 5%;;
      }
     
     img{
