@@ -24,19 +24,19 @@ align-items: center;
 //justify-content: space-around;
 align-items: center;
 
-@media(max-width: 1250px) {
-    width: 60%;
-    margin-left:20%;
+@media @laptop {
+    width: 50%;
+    margin-left:25%;
 }
 
-@media(max-width: 850px) {
-    width: 80%;
-    margin-left:10%;
+@media @tablet {
+    width: 60%;
+    margin-left:20%;
     margin-top:15%;
 }
-@media(max-width: 620px) {
-    width: 100%;
-    margin-left:auto;
+@media @phone {
+    width: 80%;
+    margin-left:10%;
     margin-top:15%;
 }
 
@@ -54,6 +54,18 @@ align-items: center;
         font-size: 3.5rem;
         color:@mainGreen;
         font-family: 'Kaushan Script', cursive;
+
+
+        @media @laptop {
+            font-size: 3rem;
+        }
+        
+        @media @tablet {
+            font-size: 3rem;
+        }
+        @media @phone {
+            font-size: 2.5rem;
+        }
 
         @media @smallPhone{
             font-size: 2.5rem;

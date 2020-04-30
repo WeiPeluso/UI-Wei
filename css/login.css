@@ -96,6 +96,13 @@ html {
   margin-left: 65%;
   padding-top: 2%;
 }
+@media ( max-width: 900px ) {
+  .header {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 2%;
+  }
+}
 @media ( max-width: 700px ) {
   .header {
     width: 100%;
@@ -122,11 +129,6 @@ html {
   letter-spacing: 0.5rem;
   font-family: 'Kaushan Script', cursive;
 }
-@media ( max-width: 900px ) {
-  .header .links a {
-    font-size: 1.5rem;
-  }
-}
 @media ( max-width: 700px ) {
   .header .links a {
     font-size: 2rem;
@@ -145,9 +147,28 @@ html {
   justify-content: space-between;
   align-items: right;
 }
+@media ( max-width: 1200px ) {
+  .footer {
+    width: 35%;
+    margin-left: 60%;
+  }
+}
+@media ( max-width: 900px ) {
+  .footer {
+    width: 30%;
+    margin-left: 60%;
+  }
+}
 @media ( max-width: 700px ) {
   .footer {
-    width: 50%;
+    width: 30%;
+    margin-left: 60%;
+    margin-top: 2%;
+  }
+}
+@media ( max-width: 500px ) {
+  .footer {
+    width: 40%;
     margin-left: 50%;
     margin-top: 2%;
   }
@@ -192,23 +213,23 @@ html {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 1250px) {
+@media ( max-width: 1200px ) {
+  .loginFrame {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+@media ( max-width: 900px ) {
   .loginFrame {
     width: 60%;
     margin-left: 20%;
-  }
-}
-@media (max-width: 850px) {
-  .loginFrame {
-    width: 80%;
-    margin-left: 10%;
     margin-top: 15%;
   }
 }
-@media (max-width: 620px) {
+@media ( max-width: 700px ) {
   .loginFrame {
-    width: 100%;
-    margin-left: auto;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 15%;
   }
 }
@@ -225,6 +246,21 @@ html {
   font-size: 3.5rem;
   color: #3b7a57;
   font-family: 'Kaushan Script', cursive;
+}
+@media ( max-width: 1200px ) {
+  .loginFrame .firstSection p {
+    font-size: 3rem;
+  }
+}
+@media ( max-width: 900px ) {
+  .loginFrame .firstSection p {
+    font-size: 3rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .loginFrame .firstSection p {
+    font-size: 2.5rem;
+  }
 }
 @media ( max-width: 500px ) {
   .loginFrame .firstSection p {
