@@ -167,27 +167,26 @@ html {
     font-size: 1.2rem;
   }
 }
-.mainSection {
-  background-color: #3b7a57;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.headerSection {
+  height: 70vh;
+  width: 100%;
+  background-image: url(/images/wave\ .png);
 }
-.mainSection .about {
-  margin-top: 10%;
-  width: 80%;
+.headerSection .about {
+  padding-top: 10%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 8%;
 }
 @media ( max-width: 700px ) {
-  .mainSection .about {
+  .headerSection .about {
     width: 100%;
     margin-top: 20%;
   }
 }
-.mainSection .about h2 {
+.headerSection .about h2 {
   font-size: 3rem;
   font-family: 'Kaushan Script', cursive;
   padding-bottom: 15%;
@@ -196,12 +195,12 @@ html {
   letter-spacing: 0.5rem;
 }
 @media ( max-width: 700px ) {
-  .mainSection .about h2 {
+  .headerSection .about h2 {
     font-size: 2rem;
     letter-spacing: 0.3rem;
   }
 }
-.mainSection .about p {
+.headerSection .about p {
   font-size: 2rem;
   line-height: 4rem;
   width: 80%;
@@ -210,7 +209,7 @@ html {
   letter-spacing: 0.2rem;
 }
 @media ( max-width: 700px ) {
-  .mainSection .about p {
+  .headerSection .about p {
     width: 90%;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
