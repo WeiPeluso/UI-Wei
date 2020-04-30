@@ -96,6 +96,13 @@ html {
   margin-left: 65%;
   padding-top: 2%;
 }
+@media ( max-width: 900px ) {
+  .header {
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 2%;
+  }
+}
 @media ( max-width: 700px ) {
   .header {
     width: 100%;
@@ -122,11 +129,6 @@ html {
   letter-spacing: 0.5rem;
   font-family: 'Kaushan Script', cursive;
 }
-@media ( max-width: 900px ) {
-  .header .links a {
-    font-size: 1.5rem;
-  }
-}
 @media ( max-width: 700px ) {
   .header .links a {
     font-size: 2rem;
@@ -145,9 +147,28 @@ html {
   justify-content: space-between;
   align-items: right;
 }
+@media ( max-width: 1200px ) {
+  .footer {
+    width: 35%;
+    margin-left: 60%;
+  }
+}
+@media ( max-width: 900px ) {
+  .footer {
+    width: 30%;
+    margin-left: 60%;
+  }
+}
 @media ( max-width: 700px ) {
   .footer {
-    width: 50%;
+    width: 30%;
+    margin-left: 60%;
+    margin-top: 2%;
+  }
+}
+@media ( max-width: 500px ) {
+  .footer {
+    width: 40%;
     margin-left: 50%;
     margin-top: 2%;
   }
@@ -168,11 +189,13 @@ html {
   }
 }
 .headerSection {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   background-image: url(/images/wave\ .png);
 }
 .headerSection .about {
+  border: 2px solid red;
+  width: 30%;
   padding-top: 10%;
   width: 100%;
   display: flex;
@@ -300,9 +323,4 @@ html {
 .footer {
   margin-top: 1%;
   margin-bottom: 1%;
-}
-@media ( max-width: 700px ) {
-  .footer {
-    width: 40%;
-  }
 }

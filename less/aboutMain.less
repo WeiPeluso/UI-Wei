@@ -1,168 +1,163 @@
 
-     .headerSection{
-        
-        height:70vh;
-        width:100%;
-       // background-color: @mainGreen;
-       background-image: url(/images/wave\ .png);
-     
+    .headerSection{
+    
+    height:80vh;
+    width:100%;
+    // background-color: @mainGreen;
+    background-image: url(/images/wave\ .png);
+    
 
     .about{
-        padding-top: 10%;
-        width:100%;
-        //height:55vh;
+     border: 2px solid red;
+    width: 30%;
+    padding-top: 10%;
+    width:100%;
         .displayColumn();
-         padding-bottom: 8%;
-        
-         @media @phone{
-             width:100%;
-             padding-top: 15%;
-         }
-
-        h2{
-            
-            font-size: 3rem;
-            font-family: 'Kaushan Script', cursive;
-            padding-bottom: 15%;
-            text-transform: uppercase;
-            word-spacing: 1rem;
-            letter-spacing: .5rem;
-
-            @media @phone{
-              
-                font-size: 2rem;
-                letter-spacing: .3rem;
-               
-            }
-    }//end of h2
+        padding-bottom: 8%;
     
-    p{
-      
-        font-size: 2rem;
-        line-height: 4rem;
-        width:80%;
-        text-align: center;
-        color:white;
-        letter-spacing: .2rem;
+        @media @phone{
+            width:100%;
+            padding-top: 15%;
+            }//end of phone media
+
+         h2{
+        
+        font-size: 3rem;
+        font-family: 'Kaushan Script', cursive;
+        padding-bottom: 15%;
+        text-transform: uppercase;
+        word-spacing: 1rem;
+        letter-spacing: .5rem;
 
         @media @phone{
-            width:90%;
-            font-size: 1.5rem;
-            letter-spacing: .1rem;
-           
-        }
-    }//end of P
+            
+            font-size: 2rem;
+            letter-spacing: .3rem;
+               
+        }//end of phone media
+       }//end of h2
 
-    }//end of about
-}
+p{
+    
+    font-size: 2rem;
+    line-height: 4rem;
+    width:80%;
+    text-align: center;
+    color:white;
+    letter-spacing: .2rem;
+
+    @media @phone{
+        width:90%;
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+        
+    }
+}//end of P
+
+}//end of about
+}//end of headerSection
 
 .team{
 
-    width:100%;
-    //height: 200vh;
-    .displayColumn();
+width:100%;
+//height: 200vh;
+.displayColumn();
 
 
-    h2{
-        text-transform: uppercase;
-        font-size: 3.5rem;
-        font-family: 'Kaushan Script', cursive;
-        padding-bottom: 3%;
-        word-spacing: 1rem;
-        letter-spacing: .5rem;
-        @media @phone{
-              
-            font-size: 2rem;
-            letter-spacing: .3rem;
-           
-        }
+h2{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-family: 'Kaushan Script', cursive;
+    padding-bottom: 3%;
+    word-spacing: 1rem;
+    letter-spacing: .5rem;
+    @media @phone{
+            
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        
+    }
 }//end of h2
 
 .memberInfo{
-    //border: 2px solid red;
-    .displayRow();
-    flex-wrap: wrap;
-    justify-content: center;
-   // margin-bottom: 2%;;
+//border: 2px solid red;
+.displayRow();
+flex-wrap: wrap;
+justify-content: center;
+// margin-bottom: 2%;;
+
+
+
+@media @phone{
+            
+    .displayColumn();
     
+}
+.member{
+    background-color: rgba(255, 255, 255, 0);
+    //  border: 2px solid red;
+    width: 30%;
+    text-align: center;
+    padding-bottom: 35%;
+    padding-left:2%;
+    height:55vh;
 
-  
     @media @phone{
-              
-        .displayColumn();
-       
+            
+        width: 70%;
+        padding-bottom: 80%;
+        
     }
-    .member{
-        background-color: rgba(255, 255, 255, 0);
-      //  border: 2px solid red;
-        width: 30%;
-        text-align: center;
-        padding-bottom: 35%;
-        padding-left:2%;
-        height:55vh;
+    .memberimg{
+        //border: 2px solid blue;
+        border-radius: 50%;
+        width:70%;
+        padding-bottom: 8%;
+        // border: 1px solid @mainGreen;
+    }
+}   
+.name{
+    //  border: 2px solid green;;
+    font-size: 2.2rem;
+    color:@mainGreen;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    padding-bottom: 2%;
 
-        @media @phone{
-              
-            width: 70%;
-            padding-bottom: 80%;
-           
-        }
-        .memberimg{
-            //border: 2px solid blue;
-            border-radius: 50%;
-            width:70%;
-            padding-bottom: 8%;
-           // border: 1px solid @mainGreen;
-        }
+    @media @phone{
+            
+        font-size: 1.5rem;
+        padding-bottom: 3%;
+        
     }
-    .name{
-      //  border: 2px solid green;;
-        font-size: 2.2rem;
-        color:@mainGreen;
-        letter-spacing: .1rem;
-        text-transform: uppercase;
-        padding-bottom: 2%;
-
-        @media @phone{
-              
-            font-size: 1.5rem;
-            padding-bottom: 3%;
-           
-        }
-    }
-    .title{
-        font-size: 2rem;
-        color:@mainGreen;
-        text-transform: capitalize;
-        padding-bottom: 5%;
-
-    }
-
-    .contactButton{
-        border-radius: 10px;
-        padding:1%;
-        padding-left:4%;
-        padding-right:4%;
-        font-size: 2rem;
-        background-color:@mainGreen;
-        color:white;
-        text-transform: capitalize;
-        outline:none;
-    }
-}// end of memberinfo
+}
+.title{
+    font-size: 2rem;
+    color:@mainGreen;
+    text-transform: capitalize;
+    padding-bottom: 5%;
 
 }
+
+.contactButton{
+    border-radius: 10px;
+    padding:1%;
+    padding-left:4%;
+    padding-right:4%;
+    font-size: 2rem;
+    background-color:@mainGreen;
+    color:white;
+    text-transform: capitalize;
+    outline:none;
+}
+
+
+}// end of memberinfo
+}//end of team
+
 
 .footer{
-  margin-top:1%;
-  margin-bottom:1%;
-
-
-  @media @phone{
-              
-    width: 40%;
-   
-}
-
+margin-top:1%;
+margin-bottom:1%;
 
 }
