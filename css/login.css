@@ -233,6 +233,13 @@ html {
     margin-top: 15%;
   }
 }
+@media ( max-width: 500px ) {
+  .loginFrame {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20%;
+  }
+}
 .loginFrame .firstSection {
   height: 40vh;
   display: flex;
