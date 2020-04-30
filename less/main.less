@@ -2,12 +2,17 @@
  
     height :120vh;
     background-color:@mainGreen;
+    //border: 2px solid blue;
 
     @media @phone{
         height:80vh;
     }
+
+    @media @tablet{
+        height:100vh;
+    }
     .middleSection{
-      // border: 2px solid blue;
+      //border: 2px solid blue;
         height:120vh;
         width:100%;
         .displayColumn();
@@ -16,6 +21,10 @@
  
         @media @phone{
             height:80vh;
+        }
+        @media @tablet{
+            padding-top: 15%;
+            height:100vh;
         }
 
     .mainH1{
@@ -37,7 +46,7 @@
         @media @phone{
             font-size: 2rem;
             letter-spacing: .2rem;
-            padding-top: 8%;
+            padding-top: 4%;
             margin-left:5%;
         }
 
@@ -94,6 +103,8 @@
         width:15%;
         border:2px solid black;
         color:@mainGreen;
+        height:4%;
+        padding-bottom: 2.5%;
         @media @tablet{
           
             font-size: 1.5rem;
@@ -101,7 +112,7 @@
         }
 
         @media @phone{
-            width:40%;
+            width:25%;
             font-size: 1.5rem;
             
         }
@@ -111,7 +122,9 @@
     img{
 
         width:40%;
-        height:80vh;
+        height: auto;
+      /* even more control with max-width */
+        max-width: 720px;
 
         @media @tablet{
           
@@ -121,7 +134,6 @@
 
         @media @phone{
             width:60%;
-            height:50vh;
             
         }
 
@@ -139,9 +151,17 @@
     .displayRow();
     justify-content: space-around;
 
+    @media @tablet{
+        //border: 2px solid red;
+        margin-top:30%;
+ 
+     
+ }
+
+
     @media @phone{
            //border: 2px solid red;
-    margin-top:20%;
+    margin-top:30%;
     margin-bottom:2%;
     height:90vh;
     .displayColumn();

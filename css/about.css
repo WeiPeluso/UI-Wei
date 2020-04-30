@@ -183,7 +183,7 @@ html {
 @media ( max-width: 700px ) {
   .headerSection .about {
     width: 100%;
-    margin-top: 20%;
+    padding-top: 15%;
   }
 }
 .headerSection .about h2 {
@@ -223,7 +223,7 @@ html {
 }
 .team h2 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'Kaushan Script', cursive;
   padding-bottom: 3%;
   word-spacing: 1rem;
@@ -249,30 +249,53 @@ html {
   }
 }
 .team .memberInfo .member {
+  background-color: rgba(255, 255, 255, 0);
   width: 30%;
   text-align: center;
-  padding-bottom: 2%;
+  padding-bottom: 35%;
   padding-left: 2%;
+  height: 55vh;
 }
 @media ( max-width: 700px ) {
   .team .memberInfo .member {
     width: 70%;
+    padding-bottom: 80%;
   }
 }
 .team .memberInfo .member .memberimg {
-  border-radius: 10%;
-  width: 100%;
-  padding-bottom: 3%;
+  border-radius: 50%;
+  width: 70%;
+  padding-bottom: 8%;
 }
-.team .memberInfo p {
-  font-size: 2rem;
-  color: white;
+.team .memberInfo .name {
+  font-size: 2.2rem;
+  color: #3b7a57;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding-bottom: 2%;
 }
 @media ( max-width: 700px ) {
-  .team .memberInfo p {
+  .team .memberInfo .name {
     font-size: 1.5rem;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
   }
+}
+.team .memberInfo .title {
+  font-size: 2rem;
+  color: #3b7a57;
+  text-transform: capitalize;
+  padding-bottom: 5%;
+}
+.team .memberInfo .contactButton {
+  border-radius: 10px;
+  padding: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 2rem;
+  background-color: #3b7a57;
+  color: white;
+  text-transform: capitalize;
+  outline: none;
 }
 .footer {
   margin-top: 1%;
