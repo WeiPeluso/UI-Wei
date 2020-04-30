@@ -255,8 +255,6 @@ html {
   width: 15%;
   border: 2px solid black;
   color: #3b7a57;
-  height: 4%;
-  padding-bottom: 2.5%;
 }
 @media ( max-width: 900px ) {
   .mainSection .middleSection .btn {
@@ -271,8 +269,6 @@ html {
 }
 @media ( max-width: 500px ) {
   .mainSection .middleSection .btn {
-    padding: 2.5%;
-    padding-bottom: 5%;
     font-size: 1.5rem;
   }
 }
