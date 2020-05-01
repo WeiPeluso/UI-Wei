@@ -96,26 +96,51 @@ justify-content: center;
     
 }
 .member{
-    background-color: rgba(255, 255, 255, 0);
-    //  border: 2px solid red;
+   // background-color: rgba(255, 255, 255, 0);
+     //sborder: 2px solid red;
     width: 30%;
     text-align: center;
-    padding-bottom: 35%;
+  
     padding-left:2%;
-    height:55vh;
+    height:60vh;
 
+    @media @laptop{
+            
+        height:60vh;
+    }
+
+    @media @tablet{
+            
+        height:50vh;
+    }
     @media @phone{
+
+        height:60vh;
             
         width: 70%;
-        padding-bottom: 80%;
+        
+    }
+
+    @media @smallPhone{
+
+        height:55vh;
+
         
     }
     .memberimg{
-        //border: 2px solid blue;
+        
         border-radius: 50%;
         width:70%;
         padding-bottom: 8%;
-        // border: 1px solid @mainGreen;
+       
+    
+    }
+
+    .memberimg:hover{
+
+        transform: scale(1.1);
+        transition: transform 1s ease-in-out;
+    
     }
 }   
 .name{
@@ -151,6 +176,13 @@ justify-content: center;
     color:white;
     text-transform: capitalize;
     outline:none;
+}
+
+.contactButton:hover{
+
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
+
 }
 
 

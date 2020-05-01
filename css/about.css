@@ -271,23 +271,40 @@ html {
   }
 }
 .team .memberInfo .member {
-  background-color: rgba(255, 255, 255, 0);
   width: 30%;
   text-align: center;
-  padding-bottom: 35%;
   padding-left: 2%;
-  height: 55vh;
+  height: 60vh;
+}
+@media ( max-width: 1200px ) {
+  .team .memberInfo .member {
+    height: 60vh;
+  }
+}
+@media ( max-width: 900px ) {
+  .team .memberInfo .member {
+    height: 50vh;
+  }
 }
 @media ( max-width: 700px ) {
   .team .memberInfo .member {
+    height: 60vh;
     width: 70%;
-    padding-bottom: 80%;
+  }
+}
+@media ( max-width: 500px ) {
+  .team .memberInfo .member {
+    height: 55vh;
   }
 }
 .team .memberInfo .member .memberimg {
   border-radius: 50%;
   width: 70%;
   padding-bottom: 8%;
+}
+.team .memberInfo .member .memberimg:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
 }
 .team .memberInfo .name {
   font-size: 2.2rem;
@@ -318,6 +335,10 @@ html {
   color: white;
   text-transform: capitalize;
   outline: none;
+}
+.team .memberInfo .contactButton:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
 }
 .footer {
   margin-top: 1%;
