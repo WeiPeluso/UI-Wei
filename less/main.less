@@ -23,7 +23,7 @@
         width:100%;
         .displayColumn();
         align-items: center;
-        padding-top: 8%;
+        padding-top: 12%;
 
         @media @tablet{
             padding-top: 10%;
@@ -112,11 +112,21 @@
 
     .btn{
 
-        .button();
-        font-size: 2.5rem;
-         width:15%;
-        border:2px solid black;
-        color:@mainGreen;
+        width: 15%;
+        border-radius: 8px;
+        opacity:0.85;
+        display:inline-block;
+        font-size:2rem;
+        text-decoration: none;
+        line-height: 2rem;
+        background-color:white;
+        color: @mainGreen;
+        padding:12px;
+        text-align: center;
+        margin-bottom:4%;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        outline:0;
 
         @media @tablet{
           
@@ -290,12 +300,24 @@
    
    
    }
+
+
    .btn{
-   .button();
+
+    border-radius: 8px;
+    opacity:0.85;
+    display:inline-block;
+    text-decoration: none;
+    line-height: 2rem;
+    padding:12px;
+    text-align: center;
     width:20%;
     background-color:@mainGreen;
     color:white;
     font-size: 3rem;
+    outline:0;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 
     @media @tablet{
           
