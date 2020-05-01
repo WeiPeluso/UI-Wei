@@ -261,6 +261,11 @@ html {
   letter-spacing: 0.5rem;
   border: 2px solid black;
 }
+@media (min-width: 1200px) {
+  .mainSection .middleSection .btn {
+    line-height: 8rem;
+  }
+}
 @media ( max-width: 900px ) {
   .mainSection .middleSection .btn {
     font-size: 2rem;
@@ -270,6 +275,11 @@ html {
   .mainSection .middleSection .btn {
     width: 30%;
     font-size: 1.5rem;
+  }
+}
+@media ( max-width: 700px ) {
+  .mainSection .middleSection .btn {
+    width: 60%;
   }
 }
 @media ( max-width: 500px ) {
