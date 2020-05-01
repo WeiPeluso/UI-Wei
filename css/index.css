@@ -244,13 +244,12 @@ html {
   }
 }
 .mainSection .middleSection .btn {
-  width: 15%;
+  width: 20%;
   border-radius: 8px;
   opacity: 0.85;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: none;
-  line-height: 2rem;
   background-color: white;
   color: #3b7a57;
   padding: 12px;
@@ -259,9 +258,11 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   outline: 0;
+  border: 2px solid black;
 }
 @media ( max-width: 900px ) {
   .mainSection .middleSection .btn {
+    width: 20%;
     font-size: 1.5rem;
   }
 }
