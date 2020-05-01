@@ -243,7 +243,7 @@ html {
     width: 60%;
   }
 }
-.mainSection .middleSection .btn {
+.mainSection .middleSection .searchBtn {
   margin-top: 1%;
   border-radius: 8px;
   opacity: 0.85;
@@ -261,29 +261,19 @@ html {
   letter-spacing: 0.5rem;
   border: 2px solid black;
 }
-@media (min-width: 1200px) {
-  .mainSection .middleSection .btn {
-    line-height: 8rem;
-  }
-}
 @media ( max-width: 900px ) {
-  .mainSection .middleSection .btn {
+  .mainSection .middleSection .searchBtn {
     font-size: 2rem;
   }
 }
 @media ( max-width: 700px ) {
-  .mainSection .middleSection .btn {
+  .mainSection .middleSection .searchBtn {
     width: 30%;
     font-size: 1.5rem;
   }
 }
-@media ( max-width: 700px ) {
-  .mainSection .middleSection .btn {
-    width: 60%;
-  }
-}
 @media ( max-width: 500px ) {
-  .mainSection .middleSection .btn {
+  .mainSection .middleSection .searchBtn {
     font-size: 1.5rem;
   }
 }
