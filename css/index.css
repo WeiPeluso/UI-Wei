@@ -261,6 +261,11 @@ html {
   letter-spacing: 0.5rem;
   border: 2px solid black;
 }
+@media (min-width: 1600px) {
+  .mainSection .middleSection .searchBtn {
+    width: 40%;
+  }
+}
 @media ( max-width: 900px ) {
   .mainSection .middleSection .searchBtn {
     font-size: 2rem;
@@ -294,7 +299,7 @@ html {
   }
 }
 .secondSection {
-  margin-top: 28%;
+  margin-top: 30%;
   margin-bottom: 2%;
   width: 100%;
   display: flex;
