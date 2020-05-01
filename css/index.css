@@ -244,32 +244,31 @@ html {
   }
 }
 .mainSection .middleSection .btn {
-  width: 20%;
+  margin-top: 1%;
   border-radius: 8px;
   opacity: 0.85;
   display: inline-block;
-  font-size: 3rem;
   text-decoration: none;
-  line-height: 4rem;
-  background-color: white;
-  color: #3b7a57;
+  line-height: 2rem;
   padding: 12px;
   text-align: center;
-  margin-bottom: 4%;
+  width: 20%;
+  background-color: white;
+  color: #3b7a57;
+  font-size: 3rem;
+  outline: 0;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  outline: 0;
   border: 2px solid black;
 }
 @media ( max-width: 900px ) {
   .mainSection .middleSection .btn {
-    width: 20%;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media ( max-width: 700px ) {
   .mainSection .middleSection .btn {
-    width: 25%;
+    width: 30%;
     font-size: 1.5rem;
   }
 }
@@ -280,9 +279,9 @@ html {
 }
 .mainSection .middleSection img {
   width: 40%;
-  height: auto;
   /* even more control with max-width */
   max-width: 720px;
+  margin-top: 5%;
 }
 @media ( max-width: 900px ) {
   .mainSection .middleSection img {
